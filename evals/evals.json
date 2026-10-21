@@ -1,0 +1,20 @@
+{
+  "skill": "context-transfer",
+  "test_cases": [
+    {
+      "name": "refresh_on_request",
+      "input": "Refresh my context please",
+      "assertions": ["Reads memory file", "Generates internal Context Snapshot", "Provides clean summary if appropriate"]
+    },
+    {
+      "name": "personal_query",
+      "input": "What projects am I currently working on?",
+      "assertions": ["Loads memory first", "Extracts active projects from Goals & Core Interests", "Responds using fresh snapshot"]
+    },
+    {
+      "name": "long_thread_anchor",
+      "input": "Continue planning the Folio launch but make sure you have the latest on my situation",
+      "assertions": ["Rebuilds snapshot from memory", "Prioritizes recent status and project details", "Avoids relying on potentially stale conversation history"]
+    }
+  ]
+}
