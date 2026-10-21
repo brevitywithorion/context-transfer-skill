@@ -1,0 +1,10 @@
+{
+  "skill": "context-transfer",
+  "test_cases": [
+    {"input": "Refresh my context", "should_trigger": true},
+    {"input": "What do you know about my current projects?", "should_trigger": true},
+    {"input": "Start a new conversation and get my latest status", "should_trigger": true},
+    {"input": "What's the weather today?", "should_trigger": false},
+    {"input": "Explain quantum computing", "should_trigger": false}
+  ]
+}
